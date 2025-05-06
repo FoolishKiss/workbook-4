@@ -50,6 +50,7 @@ public class Reservations {
         this.nights = nights;
     }
 
+    //Derived getter returns the total price
     public double getTotalPrice() {
         return price * nights;
     }
