@@ -10,12 +10,13 @@ public class Reservations {
         this.roomType = roomType;
         this.nights = nights;
         this.isWeekend = isWeekend;
+        //Price is set based off room type
         if (roomType.equalsIgnoreCase("king")) {
             this.price = 139.00;
         } else {
             this.price = 124.00;
         }
-
+        //If is weekend is true then add 10% to the price
         if (isWeekend) {
             this.price *= 1.10;
 
@@ -50,7 +51,7 @@ public class Reservations {
         this.nights = nights;
     }
 
-    //Derived getter returns the total price
+    //Derived getter returns the total price by multiplying price per night
     public double getTotalPrice() {
         return price * nights;
     }
