@@ -1,6 +1,8 @@
+package com.pluralsight;
+
 public class HotelOperationsApp {
     public static void main(String[] args) throws InterruptedException {
-        // Test the Room class
+        // Test the com.pluralsight.Room class
         Room room = new Room(2, 129.99, true, true);
         System.out.println("Room1 is available: " + room.isAvailable());
         System.out.println("\n");
@@ -13,7 +15,7 @@ public class HotelOperationsApp {
 
         // Test the Reservation class
         Reservations reservation = new Reservations("King", 3, true);
-        System.out.println("Room Type: " + reservation.getRoomType());
+        System.out.println("com.pluralsight.Room Type: " + reservation.getRoomType());
         System.out.println("Weekend: " + reservation.isWeekend());
         System.out.println("Price per night: $" + reservation.getPrice());
         System.out.println("Total for reservation: $" + reservation.getTotalPrice());
@@ -21,7 +23,7 @@ public class HotelOperationsApp {
 
         // Test the employee class
         Employee emp = new Employee("1", "Bruce Lee", "housekeeping", 20.0, 45.0);
-        System.out.println("Employee: " + emp.getName());
+        System.out.println("com.pluralsight.Employee: " + emp.getName());
         System.out.println("Regular Hours: " + emp.getRegularHours());
         System.out.println("Overtime Hours: " + emp.getOvertimeHours());
         System.out.println("Total Pay: $" + emp.getTotalPay());

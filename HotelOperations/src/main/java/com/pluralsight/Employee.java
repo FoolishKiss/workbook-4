@@ -1,3 +1,5 @@
+package com.pluralsight;
+
 import java.time.LocalDateTime;
 
 public class Employee {
@@ -99,7 +101,7 @@ public class Employee {
     public void punchIn() {
         LocalDateTime now = LocalDateTime.now();
         double time = now.getHour() + now.getMinute() / 60.0;
-        punchIn(time);  // call the original method
+        punchIn(time);  // call the original method and passes time generated
     }
 
     //Method to punch out using local date time

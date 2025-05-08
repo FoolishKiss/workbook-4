@@ -1,6 +1,8 @@
+package com.pluralsight;
+
 public class Hotel {
 
-    //Hotel variables
+    //com.pluralsight.Hotel variables
     private String name;
     private int numberOfSuites;
     private int numberOfRooms;
@@ -9,7 +11,11 @@ public class Hotel {
 
     //Constructor set the booked counts to 0
     public Hotel(String name, int numberOfSuites, int numberOfRooms) {
-        this(name, numberOfSuites, numberOfRooms, 0, 0);
+        this.name = name;
+        this.numberOfSuites = numberOfSuites;
+        this.numberOfRooms = numberOfRooms;
+        this.bookedSuites = 0;
+        this.bookedBasicRooms = 0;
     }
 
     //Constructor sets all values
@@ -23,12 +29,12 @@ public class Hotel {
 
     //Derived getter to get available suites
     public int getAvailableSuites() {
-        return numberOfSuites - bookedSuites;
+        return this.numberOfSuites - this.bookedSuites;
     }
 
     //Derived getter to get available suites
     public int getAvailableRooms() {
-        return numberOfRooms - bookedBasicRooms;
+        return this.numberOfRooms - this.bookedBasicRooms;
     }
 
     //Method to book rooms. it takes rooms requested, and checks to see if is suite is true or false for basic room

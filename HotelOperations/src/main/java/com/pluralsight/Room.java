@@ -1,3 +1,5 @@
+package com.pluralsight;
+
 public class Room {
 
     //Variables for rooms
@@ -23,9 +25,9 @@ public class Room {
         if (!isOccupied && !isDirty) {
             isOccupied = true;
             isDirty = true;
-            System.out.println("Room has been checked in.");
+            System.out.println("com.pluralsight.Room has been checked in.");
         } else {
-            System.out.println("Room cannot be checked in.");
+            System.out.println("com.pluralsight.Room cannot be checked in.");
         }
     }
     //Method to check out, clears room if occupied
@@ -34,7 +36,7 @@ public class Room {
             isOccupied = false;
             System.out.println("Guest checked out.");
         } else {
-            System.out.println("Room is already empty.");
+            System.out.println("com.pluralsight.Room is already empty.");
         }
     }
 
@@ -58,9 +60,9 @@ public class Room {
     public void cleanRoom() {
         if (!isOccupied) {
             isDirty = false;
-            System.out.println("Room has been cleaned.");
+            System.out.println("com.pluralsight.Room has been cleaned.");
         } else {
-            System.out.println("Room cannot be cleaned while it is occupied.");
+            System.out.println("com.pluralsight.Room cannot be cleaned while it is occupied.");
         }
     }
 
