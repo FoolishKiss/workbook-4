@@ -21,7 +21,9 @@ public class BlackJackApp {
             hand1.deal(card);
         }
 
-        //print out the value of all the cards in the hand
+        //print and shows the value of all the cards in the hand
+        System.out.println("Hand 1 has:");
+        hand1.showCards();
         System.out.println("This hand is worth " + hand1.getValue());
     }
 

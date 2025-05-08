@@ -34,5 +34,12 @@ public class Hand {
 //        return value;
     }
 
+    //Method to show cards
+    public void showCards() {
+        for (Card card : cards) {
+            System.out.println(card.getValue() + " of " + card.getSuit());
+        }
+    }
+
 
 }
