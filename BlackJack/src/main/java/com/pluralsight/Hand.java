@@ -25,13 +25,6 @@ public class Hand {
             value += card.getPointValue();
         }
         return value;
-//        int value = 0;
-//        for (Card card : cards) {
-//            card.flip(); // turn the card over to see the value
-//            value += card.getPointValue();
-//            card.flip(); // hide the card again
-//        }
-//        return value;
     }
 
     //Method to show cards
